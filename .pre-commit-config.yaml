@@ -22,7 +22,8 @@ repos:
       - id: pyright
         name: pyright
         language: node
-        additional_dependencies: [pyright]
+        additional_dependencies: [pyright@1.1.408]
+        args: [--pythonpath, .venv/bin/python]
         types_or: [python, pyi]
         entry: pyright
 
